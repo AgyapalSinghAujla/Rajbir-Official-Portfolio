@@ -43,3 +43,12 @@ body {
   color: var(--text-color);
    font-family: var(--font-montserrat), sans-serif;
 }
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ra-official-logo{
+}
