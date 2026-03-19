@@ -40,7 +40,7 @@ const LatestRelease = () => {
   return (
     <section className="latest-release" aria-labelledby="latest-release-heading">
       <h2 id="latest-release-heading" className="sr-only">
-        Latest Releases
+        Latest Release
       </h2>
 
       <ul className="release-list">

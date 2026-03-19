@@ -102,6 +102,7 @@ h1, h2, h3 {
   padding: 0;
   margin: 0;
   width: 100%;
+  max-width: 400px;
 }
 
 .release-card {
@@ -137,4 +138,34 @@ h1, h2, h3 {
   font-size: 0.75rem;
   opacity: 0.6;
   font-weight: 300;
+}
+
+.social-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 1rem;
+  list-style: none;
+  padding:2rem;
+}
+
+.social-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+
+.social-link-card:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.4);
+}
+
+.social-link-logo {
+  object-fit: contain;
 }
