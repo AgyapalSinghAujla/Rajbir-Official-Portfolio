@@ -58,6 +58,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
+      <p className="social-description">Connect with us by following on these accounts</p>
     </section>
   );
 };
