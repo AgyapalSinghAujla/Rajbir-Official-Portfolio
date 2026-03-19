@@ -8,7 +8,7 @@ const releases = [
     artist: "Rajbir Aujla",
     platform: "/YouTube.png",
     image: "/Fademoon.jpeg",
-    href: "/music/fade-moon",
+    href: "https://youtu.be/skhuAY560BI",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const releases = [
     artist: "Rajbir Aujla",
     platform: "/Spotify.png",
     image: "/Fademoon.jpeg",
-    href: "/music/fade-moon",
+    href: "https://open.spotify.com/track/1HboTUIhYhkrwLrJ9twY88",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const releases = [
     artist: "Rajbir Aujla",
     platform: "/Apple-Music.png",
     image: "/Fademoon.jpeg",
-    href: "/music/fade-moon",
+    href: "https://music.apple.com/in/album/fade-moon/1881104654",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const releases = [
     artist: "Rajbir Aujla",
     platform: "/Yt-Music.png",
     image: "/Fademoon.jpeg",
-    href: "/music/fade-moon",
+    href: "https://music.youtube.com/watch?v=4bz7oF5Bg5c&si=H3lE_OoC_1TEx6YR",
   },
 ];
 
@@ -57,7 +57,7 @@ const LatestRelease = () => {
                 priority={index === 0} 
               />
               <div className="title-artist">
-                <p className="release-title">{item.title}    </p>
+                <p className="release-title">{item.title}</p>
                 <p className="artist-name"> {item.artist}</p>
               </div>
             </div>
