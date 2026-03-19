@@ -82,3 +82,44 @@ h1, h2, h3 {
   opacity: 0.8;
   margin-top: 0.25rem;
 }
+
+.latest-release {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  gap: 20px;
+}
+
+.release-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+
+.release-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+  box-shadow: 0 12px 20px -8px rgba(227, 227, 227, 0.35);
+}
+
+.release-card:hover {
+  transform: translateY(-2px);
+}
+
+
+.release-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+}

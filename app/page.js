@@ -1,4 +1,5 @@
 import Header from "./components/HeaderComponent/Header";
+import LatestRelease from "./components/StreamingLinkComponent/LatestReleases";
 
 
 export default function Home() {
@@ -6,6 +7,9 @@ export default function Home() {
     <>
     <section>
       <Header/>
+    </section>
+    <section>
+      <LatestRelease/>
     </section>
     </>
   );

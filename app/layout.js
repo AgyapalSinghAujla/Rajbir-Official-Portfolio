@@ -23,7 +23,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata = {
-  title: "Rajbir Aujla | Official",
+  title: "Rajbir Aujla | Independent Artist",
   description: "Where Words Fail, Music Speaks 🎤",
 
   openGraph: {

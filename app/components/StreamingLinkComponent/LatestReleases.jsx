@@ -1,0 +1,72 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const releases = [
+  {
+    id: 1,
+    title: "Fade Moon",
+    platform: "/YouTube.png",
+    image: "/Fademoon.jpeg",
+    href: "/music/fade-moon",
+  },
+  {
+    id: 2,
+    title: "Fade Moon",
+    platform: "/Spotify.png",
+    image: "/Fademoon.jpeg",
+    href: "/music/fade-moon",
+  },
+  {
+    id: 3,
+    title: "Fade Moon",
+    platform: "/Apple-Music.png",
+    image: "/Fademoon.jpeg",
+    href: "/music/fade-moon",
+  },
+  {
+    id: 4,
+    title: "Fade Moon",
+    platform: "/Yt-Music.png",
+    image: "/Fademoon.jpeg",
+    href: "/music/fade-moon",
+  },
+];
+
+const LatestRelease = () => {
+  return (
+    <section className="latest-release" aria-labelledby="latest-release-heading">
+      <h2 id="latest-release-heading" className="sr-only">
+        Latest Releases
+      </h2>
+
+      <ul className="release-list">
+        {releases.map((item, index) => (
+          <li key={item.id}>
+            <Link href={item.href} className="release-card">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={50}
+                height={50}
+                className="song-logo"
+                priority={index === 0} 
+              />
+              <p className="release-title">{item.title}</p>
+              <Image
+                src={item.platform}
+                alt={item.title}
+                width={0} 
+                height={50}
+                className="song-logo"
+                style={{ width: "auto", height: "10px" }}
+                priority={index === 0}
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+export default LatestRelease;
