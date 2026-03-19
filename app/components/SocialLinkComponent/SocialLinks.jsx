@@ -19,6 +19,18 @@ const socialLinks = [
     icon: "/YouTube.png",
     href: "https://www.youtube.com/@RajbirAujlaOfficial",
   },
+  {
+    id: 4,
+    name: "Spotify",
+    icon: "/Spotify.png",
+    href: "https://open.spotify.com/artist/7uW475asAgtNFUZOvx1Zzm",
+  },
+  {
+    id: 5,
+    name: "Apple Music",
+    icon: "/Apple-Music.png",
+    href: "https://music.apple.com/us/artist/rajbir-aujla/1840954478",
+  },
 ];
 
 const SocialLinks = () => {
