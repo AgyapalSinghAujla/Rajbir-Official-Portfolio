@@ -20,6 +20,9 @@
   --bg-color: #000000;
   --text-color: #ffffff;
   --highligter-color: rgb(0, 255, 179);
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-poppins);
+  --font-script: var(--font-cursive); 
 }
 
 * {
@@ -41,14 +44,41 @@ body {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-   font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-body);
 }
 
-header{
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.ra-official-logo{
+.logo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.subtitle{
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
 }
