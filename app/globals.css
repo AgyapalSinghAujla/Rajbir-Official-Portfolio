@@ -110,16 +110,31 @@ h1, h2, h3 {
   gap: 0.5rem;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease;
   box-shadow: 0 12px 20px -8px rgba(227, 227, 227, 0.35);
 }
 
-.release-card:hover {
-  transform: translateY(-2px);
+
+.image-title{
+  display: flex;
+  gap: 10px;
 }
 
 
 .release-title {
   font-size: 0.95rem;
   font-weight: 500;
+  text-align: center;
+  align-items: center;
+}
+
+.title-artist{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.artist-name{
+  font-size: 0.75rem;
+  opacity: 0.6;
+  font-weight: 300;
 }

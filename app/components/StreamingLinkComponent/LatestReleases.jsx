@@ -5,6 +5,7 @@ const releases = [
   {
     id: 1,
     title: "Fade Moon",
+    artist: "Rajbir Aujla",
     platform: "/YouTube.png",
     image: "/Fademoon.jpeg",
     href: "/music/fade-moon",
@@ -12,6 +13,7 @@ const releases = [
   {
     id: 2,
     title: "Fade Moon",
+    artist: "Rajbir Aujla",
     platform: "/Spotify.png",
     image: "/Fademoon.jpeg",
     href: "/music/fade-moon",
@@ -19,6 +21,7 @@ const releases = [
   {
     id: 3,
     title: "Fade Moon",
+    artist: "Rajbir Aujla",
     platform: "/Apple-Music.png",
     image: "/Fademoon.jpeg",
     href: "/music/fade-moon",
@@ -26,6 +29,7 @@ const releases = [
   {
     id: 4,
     title: "Fade Moon",
+    artist: "Rajbir Aujla",
     platform: "/Yt-Music.png",
     image: "/Fademoon.jpeg",
     href: "/music/fade-moon",
@@ -43,6 +47,7 @@ const LatestRelease = () => {
         {releases.map((item, index) => (
           <li key={item.id}>
             <Link href={item.href} className="release-card">
+            <div className="image-title">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -51,16 +56,20 @@ const LatestRelease = () => {
                 className="song-logo"
                 priority={index === 0} 
               />
-              <p className="release-title">{item.title}</p>
-              <Image
-                src={item.platform}
-                alt={item.title}
-                width={0} 
-                height={50}
-                className="song-logo"
-                style={{ width: "auto", height: "10px" }}
-                priority={index === 0}
-              />
+              <div className="title-artist">
+                <p className="release-title">{item.title}    </p>
+                <p className="artist-name"> {item.artist}</p>
+              </div>
+            </div>
+            <Image
+              src={item.platform}
+              alt={item.title}
+              width={0} 
+              height={50}
+              className="song-logo"
+              style={{ width: "auto", height: "30px" }}
+              priority={index === 0}
+            />
             </Link>
           </li>
         ))}
